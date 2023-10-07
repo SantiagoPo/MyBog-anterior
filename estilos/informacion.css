@@ -5,9 +5,10 @@ body {
     background-color: #ffffff;
 }
 
-.container {
+.content {
     margin: 0 auto;
     padding: auto;
+    margin-bottom: 100px;
 }
 
 .img-container img {
@@ -20,39 +21,6 @@ body {
     font-size: 40px;
 }
 
-/* Estilos del pie de página */
-.footer {
-    margin-top: 50px;
-    background-color: #ffffff;
-    color: #f2163e;
-    font-size: 14px;
-    text-align: center;
-    padding: 20px;
-    border-top: 2px solid #f2163e;
-}
-
-.footer ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.footer ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.footer ul li a {
-    color: #000000;
-    text-decoration: none;
-    padding: 5px;
-}
-
-.footer ul li a:hover {
-    text-decoration: underline;
-}
-
-
 
 
 .inicio{
@@ -61,7 +29,6 @@ body {
 }
 
 .cards {
-    
     margin: 0 auto;
     max-width: 1200px;
     display: grid;

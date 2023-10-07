@@ -4,6 +4,7 @@ const searchResult = document.getElementById("searchResult");
 const searchTerms = {
     "Mundo Aventura": "mundo_aventura.php",
     "Calendario": "calendario.php",
+    "Parque Central Bavaria": "./mouse/parquecentral.php",
     // Agrega más términos de búsqueda y enlaces aquí si es necesario
 };
 

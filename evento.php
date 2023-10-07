@@ -83,36 +83,34 @@ require_once('./config/conexion.php');
                         <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y
                                 condiciones</a></li>
                         <li><a href="#">Contacto</a></li>
-
                         <?php
-                        if (isset($_SESSION['user_id'])) {
-                            echo '<li><a href="./reg_establecimiento.php">deseas registrar tu establecimiento</a></li>';
-                        } else {
-                            echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
-                        }
-                        ?>
+                    if (isset($_SESSION['user_id'])) {
+                        echo '';
+                    } else {
+                        echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
+                    }
+                    ?>
 
-                    </ul>
+                </ul>
 
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
-                                    <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    Debes estar logeado/Registrado para utilizar este servicio.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                Debes estar logeado/Registrado para utilizar este servicio.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>
-
+                </div>
                     <br>
                     <p>© 2023 MyBog. Todos los derechos reservados.</p>
                 </nav>

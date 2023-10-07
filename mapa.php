@@ -64,11 +64,11 @@ require_once('./config/conexion.php');
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="mundo_aventura">
-                                        <a href="./informacion.php">
+                                        <a href="./mouse/centros_comerciales.php">
                                             <figure>
-                                                <img src="./Imagenes/modal/Arrendamientos.jpg" />
+                                                <img src="./Imagenes/modal/Centro-Comercial.gif" />
                                                 <div class="capa">
-                                                    <h3>Arrendamientos</h3>
+                                                    <h3>Centros comerciales</h3>
                                                 </div>
                                             </figure>
                                         </a>
@@ -88,7 +88,7 @@ require_once('./config/conexion.php');
                                 </div>
                                 <div class="col-md-4">
                                     <div class="simon_bolivar">
-                                        <a href="./informacion.php">
+                                        <a href="./mouse/hospedaje.php">
                                             <figure>
                                                 <img src="./Imagenes/modal/Hotel.jpeg" />
                                                 <div class="capa">
@@ -102,7 +102,7 @@ require_once('./config/conexion.php');
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="estadio">
-                                        <a href="./informacion.php">
+                                        <a href="./mouse/estadios.php">
                                             <figure>
                                                 <img src="./Imagenes/imagen de lugares/campin.jpeg" />
                                                 <div class="capa">
@@ -114,23 +114,11 @@ require_once('./config/conexion.php');
                                 </div>
                                 <div class="col-md-4">
                                     <div class="cine_colombia">
-                                        <a href="./informacion.php">
+                                        <a href="./mouse/Discotecas.php">
                                             <figure>
                                                 <img src="./Imagenes/modal/Discoteca.jpeg" />
                                                 <div class="capa">
                                                     <h3>Discotecas</h3>
-                                                </div>
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="el_corral">
-                                        <a href="./informacion.php">
-                                            <figure>
-                                                <img src="./Imagenes/modal/Centro-Comercial.gif" />
-                                                <div class="capa">
-                                                    <h3>Centros comerciales</h3>
                                                 </div>
                                             </figure>
                                         </a>
@@ -159,7 +147,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Antonio Nariño</h3>
                                         <p>
-                                        Antonio Nariño es conocida por ser un área culturalmente diversa y cuenta con una población multicultural.
+                                            Antonio Nariño es conocida por ser un área culturalmente diversa y cuenta
+                                            con una población multicultural.
                                         </p>
                                     </div>
                                 </figure>
@@ -175,7 +164,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Barrios Unidos</h3>
                                         <p>
-                                        La localidad de Barrios Unidos es una mezcla de áreas residenciales y comerciales
+                                            La localidad de Barrios Unidos es una mezcla de áreas residenciales y
+                                            comerciales
                                         </p>
                                     </div>
                                 </figure>
@@ -191,7 +181,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Bosa</h3>
                                         <p>
-                                        Bosa cuenta con varios parques y espacios públicos donde los residentes pueden disfrutar de actividades al aire libre
+                                            Bosa cuenta con varios parques y espacios públicos donde los residentes
+                                            pueden disfrutar de actividades al aire libre
                                         </p>
                                     </div>
                                 </figure>
@@ -207,7 +198,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Candelaria</h3>
                                         <p>
-                                        Dada su riqueza histórica y cultural, la Candelaria es un destino turístico importante en Bogotá. Los visitantes pueden explorar sus museos.
+                                            Dada su riqueza histórica y cultural, la Candelaria es un destino turístico
+                                            importante en Bogotá. Los visitantes pueden explorar sus museos.
                                         </p>
                                     </div>
                                 </figure>
@@ -223,7 +215,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Chapinero</h3>
                                         <p>
-                                        Chapinero se encuentra en el norte de Bogotá y es una de las localidades más céntricas de la ciudad.
+                                            Chapinero se encuentra en el norte de Bogotá y es una de las localidades más
+                                            céntricas de la ciudad.
                                         </p>
                                     </div>
                                 </figure>
@@ -239,7 +232,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Ciudad Bolivar</h3>
                                         <p>
-                                            Ciudad Bolívar es principalmente una zona residencial con una alta densidad de población.
+                                            Ciudad Bolívar es principalmente una zona residencial con una alta densidad
+                                            de población.
                                         </p>
                                     </div>
                                 </figure>
@@ -255,7 +249,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Engativa</h3>
                                         <p>
-                                        La localidad cuenta con una amplia gama de opciones comerciales y de servicios.
+                                            La localidad cuenta con una amplia gama de opciones comerciales y de
+                                            servicios.
                                         </p>
                                     </div>
                                 </figure>
@@ -271,7 +266,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Fontibon</h3>
                                         <p>
-                                        Fontibón tiene una rica herencia cultural y tradiciones arraigadas. Cuenta con festivales y eventos culturales
+                                            Fontibón tiene una rica herencia cultural y tradiciones arraigadas. Cuenta
+                                            con festivales y eventos culturales
                                         </p>
                                     </div>
                                 </figure>
@@ -287,7 +283,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Kennedy</h3>
                                         <p>
-                                        Kennedy es una localidad con un carácter residencial y comercial. Aquí encontrarás una gran variedad de viviendas,
+                                            Kennedy es una localidad con un carácter residencial y comercial. Aquí
+                                            encontrarás una gran variedad de viviendas,
                                         </p>
                                     </div>
                                 </figure>
@@ -303,7 +300,9 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Los Martires</h3>
                                         <p>
-                                        La seguridad en Los Mártires ha mejorado en los últimos años, y se han implementado medidas para proteger a los residentes y visitantes en esta zona de alto tráfico.
+                                            La seguridad en Los Mártires ha mejorado en los últimos años, y se han
+                                            implementado medidas para proteger a los residentes y visitantes en esta
+                                            zona de alto tráfico.
                                         </p>
                                     </div>
                                 </figure>
@@ -319,7 +318,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Puente Aranda</h3>
                                         <p>
-                                        Puente Aranda es un centro importante de comercio mayorista, donde se realizan transacciones comerciales
+                                            Puente Aranda es un centro importante de comercio mayorista, donde se
+                                            realizan transacciones comerciales
                                         </p>
                                     </div>
                                 </figure>
@@ -335,7 +335,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Rafael Uribe Uribe</h3>
                                         <p>
-                                        La localidad está bien conectada con el sistema de transporte público de Bogotá, incluyendo buses 
+                                            La localidad está bien conectada con el sistema de transporte público de
+                                            Bogotá, incluyendo buses
                                         </p>
                                     </div>
                                 </figure>
@@ -351,7 +352,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>San Cristobal</h3>
                                         <p>
-                                        La localidad alberga instituciones educativas que ofrecen desde educación preescolar hasta educación superior.
+                                            La localidad alberga instituciones educativas que ofrecen desde educación
+                                            preescolar hasta educación superior.
                                         </p>
                                     </div>
                                 </figure>
@@ -367,7 +369,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Santa Fe</h3>
                                         <p>
-                                        La localidad se caracteriza por su arquitectura colonial y neoclásica
+                                            La localidad se caracteriza por su arquitectura colonial y neoclásica
                                         </p>
                                     </div>
                                 </figure>
@@ -383,7 +385,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Suba</h3>
                                         <p>
-                                        Suba dispone de parques y espacios públicos donde los residentes pueden disfrutar de actividades al aire libre.
+                                            Suba dispone de parques y espacios públicos donde los residentes pueden
+                                            disfrutar de actividades al aire libre.
                                         </p>
                                     </div>
                                 </figure>
@@ -399,8 +402,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Sumapaz</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                            Sumapaz es la localidad más grande de Bogotá y una de las más extensas de
+                                            Colombia.
                                         </p>
                                     </div>
                                 </figure>
@@ -416,8 +419,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Teusaquillo</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                            La localidad presenta una interesante mezcla de estilos arquitectónicos.
                                         </p>
                                     </div>
                                 </figure>
@@ -433,8 +435,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Tunjuelito</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                            A pesar de su tamaño reducido en comparación con otras localidades,
+                                            Tunjuelito tiene una comunidad activa.
                                         </p>
                                     </div>
                                 </figure>
@@ -450,8 +452,8 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Usaquen</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                            Usaquén es famosa por su actividad comercial y gastronómica. Aquí
+                                            encontrarás mercados.
                                         </p>
                                     </div>
                                 </figure>
@@ -467,8 +469,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Usme</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+
                                         </p>
                                     </div>
                                 </figure>
@@ -489,9 +490,34 @@ require_once('./config/conexion.php');
                     <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y
                             condiciones</a></li>
                     <li><a href="#">Contacto</a></li>
+                    <?php
+                    if (isset($_SESSION['user_id'])) {
+                        echo '';
+                    } else {
+                        echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
+                    }
+                    ?>
 
                 </ul>
 
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                Debes estar logeado/Registrado para utilizar este servicio.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <br>
                 <p>© 2023 MyBog. Todos los derechos reservados.</p>
             </nav>
@@ -503,7 +529,7 @@ require_once('./config/conexion.php');
     <script src="./Funcionamiento_por_js/editar_usuario.js"></script>
     <script src="./Funcionamiento_por_js/localidades.js"></script>
     <script>
-                const searchInput = document.getElementById("searchInput");
+        const searchInput = document.getElementById("searchInput");
         const items = document.querySelectorAll(".mundo_aventura, .parque, .simon_bolivar, .estadio, .cine_colombia, .el_corral");
 
         searchInput.addEventListener("input", function () {
@@ -520,13 +546,13 @@ require_once('./config/conexion.php');
                 }
             });
         });
-        </script>
-        <script>
-   
+    </script>
+    <script>
 
 
 
 
-</body>
 
-</html>
+</body >
+
+</html >

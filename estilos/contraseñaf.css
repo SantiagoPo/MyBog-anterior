@@ -6,10 +6,10 @@ body {
 }
 
 .custom-olvi input{
-    background-image: url("/Imagenes/gmail.png");
-    background-position: 1% 40%;
+    background-image: url("../Imagenes/mochila.png");
     background-repeat: no-repeat;
-    background-size: 25px;
+    background-size: 3%;
+    background-position: 1%;
 }
 .custom-olvi .form-group {
     top: 30px;

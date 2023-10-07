@@ -13,7 +13,13 @@ require_once('./config/conexion.php');
   <title>Olvido su contraseña</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="./estilos/HeaderFooter.css">
-  <link rel="stylesheet" href="./estilos/informacion.css">
+  <link rel="stylesheet" type="text/css" href="./estilos/informacion.css">
+  <style>
+    .inicio{
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+  </style>
 </head>
 
 <body>
@@ -62,13 +68,12 @@ require_once('./config/conexion.php');
                 Parque Central Bavaria
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis
-                fugit autem qui at.
+              El Parque Central Bavaria se encuentra en una ubicación céntrica en la ciudad de Bogotá, en el barrio Bavaria,
               </p>
             </div>
             <div class="card__info">
               <div>
-                <a href="./mundo_aventura.php" class="card__link">Mas informacion</a>
+                <a href="./mouse/parquecentral.php" class="card__link">Mas informacion</a>
               </div>
             </div>
           </div>
@@ -79,8 +84,7 @@ require_once('./config/conexion.php');
                 Jardín Botánico Jose Celestino Mutis
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis
-                fugit autem qui at.
+              El jardín botánico alberga una impresionante colección de plantas y especies botánicas de Colombia y de otras partes del mundo
               </p>
             </div>
             <div class="card__info">
@@ -96,8 +100,7 @@ require_once('./config/conexion.php');
                 Parque 93
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis
-                fugit autem qui at.
+              El diseño arquitectónico del Parque de la 93 es único y atractivo. Destacan sus bancos de colores, esculturas artísticas y fuentes ornamentales
               </p>
             </div>
             <div class="card__info">
@@ -113,8 +116,7 @@ require_once('./config/conexion.php');
                 Parque Central Simon Bolivar
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis
-                fugit autem qui at.
+              El parque cuenta con áreas deportivas donde las personas pueden practicar una variedad de deportes, como fútbol, baloncesto, voleibol
               </p>
             </div>
             <div class="card__info">
@@ -130,8 +132,7 @@ require_once('./config/conexion.php');
                 Parque de Usaquen
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis
-                fugit autem qui at.
+              parque de Usaquén tiene un ambiente bohemio y relajado que atrae a residentes y visitantes que buscan disfrutar de la arquitectura histórica
               </p>
             </div>
             <div class="card__info">
@@ -147,8 +148,7 @@ require_once('./config/conexion.php');
                 Parque El Virrey
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis
-                fugit autem qui at.
+               A lo largo del parque, se pueden encontrar esculturas y obras de arte que añaden un toque artístico al entorno. 
               </p>
             </div>
             <div class="card__info">
@@ -164,8 +164,7 @@ require_once('./config/conexion.php');
                 Parque El Lago
               </h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus reiciendis
-                fugit autem qui at.
+              El Parque Metropolitano El Lago se encuentra en la localidad de Teusaquillo, en el occidente de Bogotá. Es una zona que combina áreas verdes con entornos urbanos.
               </p>
             </div>
             <div class="card__info">
@@ -181,7 +180,7 @@ require_once('./config/conexion.php');
                 Parque de Los Novios
               </h3>
               <p>
-
+              El parque es conocido por su ambiente romántico y encantador. Es un lugar muy visitado por parejas que disfrutan de pasear de la mano, sentarse en los bancos y disfrutar de la atmósfera romántica.
               </p>
 
             </div>
@@ -345,35 +344,34 @@ require_once('./config/conexion.php');
             <li><a href="#" data-toggle="modal" data-target="#modalPoliticaPrivacidad">Política de privacidad</a></li>
             <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y condiciones</a></li>
             <li><a href="#">Contacto</a></li>
-
             <?php
-            if (isset($_SESSION['user_id'])) {
-              echo '';
-            } else {
-              echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
-            }
-            ?>
+                    if (isset($_SESSION['user_id'])) {
+                        echo '';
+                    } else {
+                        echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
+                    }
+                    ?>
 
-          </ul>
+                </ul>
 
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                Debes estar logeado/Registrado para utilizar este servicio.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  Debes estar logeado/Registrado para utilizar este servicio.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <br>
           <p>© 2023 MyBog. Todos los derechos reservados.</p>
         </nav>

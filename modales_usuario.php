@@ -8,8 +8,8 @@ if (isset($_SESSION['user_id'])) {
                                     <img src="./Imagenes/usuario.png" alt="Imagen de perfil" width="32" height="32"> 
                                     
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="userDropdown">
-                                    <span class="user-info-container nombreUsuario">' . $_SESSION['nombres'] . '</span>
+                                <div class="dropdown-menu" aria-labelledby="userDropdown" style="margin-left: -18px; margin-top:10px;">
+                                <span class="user-info-container nombreUsuario" style="background-color: red; color: white; ">' . $_SESSION['nombres'] . '</span>
                                     <br>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#userModal">Opciones</a>
@@ -42,34 +42,30 @@ if (isset($_SESSION['user_id'])) {
             </div>
             <div class="modal-body">
                 <form id="editForm" method="post" action="php/actualizar.php">
-                    <!-- Añade el atributo 'action' con la URL del script PHP -->
                     <ul class="list-group">
                         <li class="list-group-item">Nombre: <span id="nombreUsuario">
-                                <?php echo isset($nombres) ? $nombres : ''; ?>
+                                <?php echo isset($_SESSION['nombres']) ? $_SESSION['nombres'] : ''; ?>
                             </span>
-                            <input type="text" name="nuevoNombre" id="editNombre" class="form-control"
-                                style="display: none;">
+                            <input type="text" name="nuevoNombre" id="editNombre" class="form-control" required>
                         </li>
                         <li class="list-group-item">Apellido: <span id="apellidoUsuario">
-                                <?php echo isset($apellidos) ? $apellidos : ''; ?>
+                                <?php echo isset($_SESSION['apellidos']) ? $_SESSION['apellidos'] : ''; ?>
                             </span>
-                            <input type="text" name="nuevoApellido" id="editApellido" class="form-control"
-                                style="display: none;">
+                            <input type="text" name="nuevoApellido" id="editApellido" class="form-control" required>
                         </li>
                         <li class="list-group-item">Correo: <span id="correoUsuario">
-                                <?php echo isset($email) ? $email : ''; ?>
+                                <?php echo isset($_SESSION['email']) ? $_SESSION['email'] : ''; ?>
                             </span>
-                            <input type="text" name="nuevoCorreo" id="editCorreo" class="form-control"
-                                style="display: none;">
+                            <input type="email" name="nuevoCorreo" id="editCorreo" class="form-control" required>
                         </li>
                     </ul>
-                    <button type="submit" id="btnGuardarCambios" class="btn btn-success" style="display: none;">Guardar
-                        Cambios</button>
+                    <br>
+                    <button type="submit" id="btnGuardarCambios" class="btn btn-success">Guardar Cambios</button>
                 </form>
 
             </div>
             <div class="modal-footer">
-                <button id="btnEditar" class="btn btn-primary">Editar Datos</button>
+                <a id="btnregistros" class="btn btn-primary" href="./mis_registros.php">Mis Registros</a>
                 <button id="btnConfirmar" class="btn btn-success" style="display: none;">Confirmar</button>
                 <button id="btnCancelar" class="btn btn-secondary" style="display: none;">Cancelar</button>
                 <a id="btnEliminarCuenta" class="btn btn-danger" href="#" data-toggle="modal"
@@ -177,3 +173,29 @@ if (isset($_SESSION['user_id'])) {
         });
     });
 </script>
+
+
+<script>
+    $(document).ready(function () {
+        // Agrega un evento de clic al botón "Editar Datos"
+        $('#btnEditar').click(function () {
+            // Muestra los campos de entrada de datos y oculta el botón de edición
+            $('#nombreUsuario, #apellidoUsuario, #correoUsuario').hide();
+            $('#editNombre, #editApellido, #editCorreo').show();
+            $('#btnGuardarCambios, #btnCancelar').show();
+            $('#btnEditar').hide();
+        });
+
+        // Agrega un evento de clic al botón "Cancelar"
+        $('#btnCancelar').click(function () {
+            // Oculta los campos de entrada de datos y muestra el botón de edición
+            $('#nombreUsuario, #apellidoUsuario, #correoUsuario').show();
+            $('#editNombre, #editApellido, #editCorreo').hide();
+            $('#btnGuardarCambios, #btnCancelar').hide();
+            $('#btnEditar').show();
+        });
+    });
+</script>
+<style>
+
+</style>

@@ -13,6 +13,13 @@ include('modales_footer.php');
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./estilos/registro.css">
     <link rel="stylesheet" type="text/css" href="./estilos/HeaderFooter.css">
+    <style>
+        .modal {
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: opacity 0.3s ease-in-out;
+            
+        }
+    </style>
 </head>
 
 <body>
@@ -81,10 +88,44 @@ include('modales_footer.php');
                                             no coinciden.</span></center>
                                 </div>
                                 <div class="form-group">
-                                    <input type="checkbox" id="checkboxId" data-target="#modalTerminosCondiciones"
-                                        required>Acepto los
-                                    <a href="#" class="tc" data-toggle="modal"
-                                    data-target="#modalPoliticaPrivacidad">Términos y condiciones</a>
+                                    <input type="checkbox" id="checkboxId" required> Acepto los Términos y condiciones
+
+                                    <div class="modal" id="modal" tabindex="-1" role="dialog"
+                                        aria-labelledby="modalTerminosCondicionesLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="modalTerminosCondicionesLabel">
+                                                        Términos y Condiciones</h5>
+                                                    <span class="close" onclick="cerrarModal()">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h4>Términos y Condiciones de MyBog</h4>
+                                                    <p>
+                                                        Al utilizar el servicio de MyBog, aceptas cumplir con
+                                                        nuestros términos y condiciones. Por
+                                                        favor, léelos cuidadosamente antes de usar nuestro servicio.
+                                                    </p>
+                                                    <p>
+                                                        <strong>Uso del Servicio:</strong> Está prohibido el uso
+                                                        inapropiado o ilegal de nuestro
+                                                        servicio. No toleramos el spam ni la conducta abusiva.
+                                                    </p>
+                                                    <p>
+                                                        <strong>Contenido del Usuario:</strong> Al publicar
+                                                        contenido en MyBog, garantizas que
+                                                        tienes los derechos necesarios sobre ese contenido.
+                                                    </p>
+                                                    <p>
+                                                        <strong>Cancelación de Cuenta:</strong> Puedes cancelar tu
+                                                        cuenta en cualquier momento si ya
+                                                        no deseas utilizar nuestro servicio.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <br>
                                 <div>
@@ -98,56 +139,88 @@ include('modales_footer.php');
                     </div>
                 </div>
             </div>
+        </div>
+        <?php
+        include('modales_footer.php');
+        ?>
+        <footer class="footer">
+            <nav>
+                <ul>
+                    <li><a href="#" data-toggle="modal" data-target="#modalPoliticaPrivacidad">Política de
+                            privacidad</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y
+                            condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <?php
+                    if (isset($_SESSION['user_id'])) {
+                        echo '';
+                    } else {
+                        echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
+                    }
+                    ?>
 
-            <footer class="footer">
-                <nav>
-                    <ul>
-                        <li><a href="#" data-toggle="modal" data-target="#modalPoliticaPrivacidad">Política de
-                                privacidad</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y
-                                condiciones</a></li>
-                        <li><a href="#">Contacto</a></li>
+                </ul>
 
-                        <?php
-                        if (isset($_SESSION['user_id'])) {
-                            echo '';
-                        } else {
-                            echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
-                        }
-                        ?>
-
-                    </ul>
-
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
-                                    <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    Debes estar logeado/Registrado para utilizar este servicio.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                Debes estar logeado/Registrado para utilizar este servicio.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <br>
+                <p>© 2023 MyBog. Todos los derechos reservados.</p>
+            </nav>
+        </footer>
+    </div>
+    <script src="./Funcionamiento_por_js/confirmacion_de_contraseña.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./Funcionamiento_por_js/editar_usuario.js"></script>
 
-                    <br>
-                    <p>© 2023 MyBog. Todos los derechos reservados.</p>
-                </nav>
-            </footer>
-        </div>
-        <script src="./Funcionamiento_por_js/confirmacion_de_contraseña.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="./Funcionamiento_por_js/editar_usuario.js"></script>
+    <script>
+        // Obtén una referencia al checkbox y al modal
+        const checkbox = document.getElementById("checkboxId");
+        const modal = document.getElementById("modal");
+
+        // Cuando se hace clic en el checkbox, muestra u oculta el modal
+        checkbox.addEventListener("click", function () {
+            if (checkbox.checked) {
+                mostrarModal();
+            } else {
+                cerrarModal();
+            }
+        });
+
+        // Función para mostrar el modal
+        function mostrarModal() {
+            modal.style.display = "flex";
+            setTimeout(() => {
+                modal.style.opacity = 1; // Hacemos que el modal sea visible
+            }, 10); // Pequeño retraso para permitir la transición
+        }
+
+        // Función para cerrar el modal
+        function cerrarModal() {
+            modal.style.opacity = 0; // Hacemos que el modal sea invisible
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 300); // Esperamos a que termine la transición (0.3s)
+        }
+    </script>
 
 </body>
 

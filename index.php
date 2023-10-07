@@ -9,7 +9,7 @@ require_once('./config/conexion.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olvido su contraseña</title>
+    <title>MyBogotá</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./estilos/HeaderFooter.css">
     <link rel="stylesheet" type="text/css" href="./estilos/inicio.css">
@@ -83,7 +83,6 @@ require_once('./config/conexion.php');
                     <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y
                             condiciones</a></li>
                     <li><a href="#">Contacto</a></li>
-
                     <?php
                     if (isset($_SESSION['user_id'])) {
                         echo '';
@@ -112,7 +111,6 @@ require_once('./config/conexion.php');
                         </div>
                     </div>
                 </div>
-
                 <br>
                 <p>© 2023 MyBog. Todos los derechos reservados.</p>
             </nav>

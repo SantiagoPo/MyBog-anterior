@@ -96,7 +96,7 @@ CREATE TABLE `cuentas` (
   PRIMARY KEY (`Id_Usuario`),
   KEY `Id_servicios` (`Id_servicios`),
   CONSTRAINT `cuentas_ibfk_1` FOREIGN KEY (`Id_servicios`) REFERENCES `servicios` (`Id_Servicios`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf16;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf16;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,7 +105,7 @@ CREATE TABLE `cuentas` (
 
 LOCK TABLES `cuentas` WRITE;
 /*!40000 ALTER TABLE `cuentas` DISABLE KEYS */;
-INSERT INTO `cuentas` VALUES (11,'Jose Antonio','Montealegre','santi01031@outlook.com','$2y$10$5GOtHs5kLk5fgJ/2j5rYR.yMAq2K6OzgwymHSin3g3QZxud4pI9Ce',1),(12,'Jose Antonio','Montealegre','santi01032@outlook.com','$2y$10$9LNqlmWGc3IY4k0ALbFST.NtvsDHbN0lY7jaZ5cLSf9QWdPoNaFgm',1),(13,'Jose Antonio','Montealegre','sa@outlook.com','$2y$10$BixBpA9e14TMR/2.pTvGyud0MvzYTcyzLZ1bS7ytr0hdOQDjun6I.',1),(15,'Jose Antonio','Montealegre','j.polanco1975@hotmail.com','$2y$10$yUkAet1JKI52zvX45BybueX89j2G9EXhb1hU8DVUWM4MF9cMMKip.',1),(16,'fabian','stiven','carvajalpitta@gmail.com','$2y$10$06PUCkA4LEriAIipUgJvwOkMxuXyoLTdKr1n/0l6blLeJ9WKdUbFO',1),(17,'Nicolas','Baron','nbaronortiz4@gmail.com','$2y$10$LoPP6dOrkceL92aurU//peBzZHBk7k9LZso4nHMkYK131cnNVNMxO',1),(18,'santiago','poalnco','san15@gmail.com','$2y$10$uRbIsfzcXmZcFR4kcSqVn.iTqaOODpomMq4L85kLSbgI2rzsMc4zi',1),(19,'lol','pol','pol123@gmail.com','$2y$10$mSJWoCgzcv/4M3.xN6R.Zu.dQEco/6eV3o1q.9NGtX9Lx5ytTx9fq',1);
+INSERT INTO `cuentas` VALUES (12,'Jose Antonio','Montealegre','santi01032@outlook.com','$2y$10$9LNqlmWGc3IY4k0ALbFST.NtvsDHbN0lY7jaZ5cLSf9QWdPoNaFgm',1),(13,'Jose Antonio','Montealegre','sa@outlook.com','$2y$10$BixBpA9e14TMR/2.pTvGyud0MvzYTcyzLZ1bS7ytr0hdOQDjun6I.',1),(15,'Jose Antonio','Montealegre','j.polanco1975@hotmail.com','$2y$10$yUkAet1JKI52zvX45BybueX89j2G9EXhb1hU8DVUWM4MF9cMMKip.',1),(16,'fabian','stiven','carvajalpitta@gmail.com','$2y$10$06PUCkA4LEriAIipUgJvwOkMxuXyoLTdKr1n/0l6blLeJ9WKdUbFO',1),(17,'Nico','Queso','','$2y$10$LoPP6dOrkceL92aurU//peBzZHBk7k9LZso4nHMkYK131cnNVNMxO',1),(18,'pedro','martin','santi1@gmail.com','$2y$10$uRbIsfzcXmZcFR4kcSqVn.iTqaOODpomMq4L85kLSbgI2rzsMc4zi',1),(19,'lol','pol','pol123@gmail.com','$2y$10$mSJWoCgzcv/4M3.xN6R.Zu.dQEco/6eV3o1q.9NGtX9Lx5ytTx9fq',1),(20,'Nicolás','Barón Ortiz','nbaronortiz4@gmail.com','$2y$10$BQQ39JsJavuFSY2X0fFLIe9Ixv2VPr9.0OFmzMFoNnoaZkmLvOj1a',1);
 /*!40000 ALTER TABLE `cuentas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -370,8 +370,8 @@ CREATE TABLE `registro_de_establecimiento` (
   `id_tipo_de_establecimiento` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`Id_registro`),
   KEY `Id_usuario_idx` (`Id_Usuario`),
-  CONSTRAINT `Id_usuario` FOREIGN KEY (`Id_Usuario`) REFERENCES `cuentas` (`Id_Usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf16;
+  CONSTRAINT `Id_usuario` FOREIGN KEY (`Id_Usuario`) REFERENCES `cuentas` (`Id_Usuario`) ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf16;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -380,6 +380,7 @@ CREATE TABLE `registro_de_establecimiento` (
 
 LOCK TABLES `registro_de_establecimiento` WRITE;
 /*!40000 ALTER TABLE `registro_de_establecimiento` DISABLE KEYS */;
+INSERT INTO `registro_de_establecimiento` VALUES (5,'restaurante','Manulita','calle 56',18,318746,'sdf','987456','Chapinero','restaurante'),(6,'restaurante','Manulita','calle 56',18,318746,'sdf','987456','Chapinero','restaurante'),(7,'hotel','Manulita','calle 56',18,318746,'dsfd','987456','Chapinero','hotel'),(8,'restaurante','fgh','ftgh',18,5546,'dfg','987456','Chapinero','restaurante'),(9,'restaurante','assAWS','calle 48',16,12312321,'sadqdwqed','2133213213','Chapinero','restaurante'),(10,'restaurante','wqqweeqw','1221312',16,21323232,'eqweqwe','eqweqweqw','Chapinero','restaurante'),(11,'restaurante','qewqewq','fsfdsfsd',16,31231,'ewqewqeqw','3123123','Chapinero','restaurante'),(12,'restaurante','sdasdadas','asdasda',16,213233,'weqeqwe','2131','Chapinero','restaurante'),(13,'restaurante','wasdad','wqewqeewq',16,213312,'qweewqeqweqw','312321312','Chapinero','restaurante'),(14,'restaurante','ewqewqewq','wqewqe',16,2133213,'wqew','weqewqeq','Santa Fe','restaurante'),(15,'restaurante','dsadsada','1232131',16,123133,'qweqweqe','213131','Santa Fe','restaurante'),(16,'restaurante','2313213','wqeqewq',16,1232131,'3213123','21312321','Santa Fe','restaurante'),(17,'restaurante','qweqewq','213312',16,321312,'31231','213313','Chapinero','restaurante');
 /*!40000 ALTER TABLE `registro_de_establecimiento` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -410,6 +411,36 @@ CREATE TABLE `salud` (
 LOCK TABLES `salud` WRITE;
 /*!40000 ALTER TABLE `salud` DISABLE KEYS */;
 /*!40000 ALTER TABLE `salud` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `schedule_list`
+--
+
+DROP TABLE IF EXISTS `schedule_list`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `schedule_list` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `title` text NOT NULL,
+  `description` text NOT NULL,
+  `start_datetime` datetime NOT NULL,
+  `end_datetime` datetime DEFAULT NULL,
+  `Id_usuario_for` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `Id_usuario_for_idx` (`Id_usuario_for`),
+  CONSTRAINT `Id_usuario_for` FOREIGN KEY (`Id_usuario_for`) REFERENCES `cuentas` (`Id_Usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `schedule_list`
+--
+
+LOCK TABLES `schedule_list` WRITE;
+/*!40000 ALTER TABLE `schedule_list` DISABLE KEYS */;
+INSERT INTO `schedule_list` VALUES (52,'asda','qwewqewqe','2023-10-02 01:26:00','2023-10-02 01:26:00',16),(56,'awsdsad','asddsadsa','2023-10-03 03:23:00','2023-10-10 03:23:00',16);
+/*!40000 ALTER TABLE `schedule_list` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -592,4 +623,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-10-06 20:36:33
+-- Dump completed on 2023-10-07  4:56:30
