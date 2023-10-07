@@ -12,7 +12,7 @@ require_once('./config/conexion.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro de Establecimiento</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="./estilos/mapa2.css" />
+    <link rel="stylesheet" type="text/css" href="./estilos/mapa.css" />
     <link rel="stylesheet" type="text/css" href="./estilos/HeaderFooter.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
@@ -159,8 +159,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Antonio Nariño</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        Antonio Nariño es conocida por ser un área culturalmente diversa y cuenta con una población multicultural.
                                         </p>
                                     </div>
                                 </figure>
@@ -176,8 +175,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Barrios Unidos</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        La localidad de Barrios Unidos es una mezcla de áreas residenciales y comerciales
                                         </p>
                                     </div>
                                 </figure>
@@ -193,8 +191,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Bosa</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        Bosa cuenta con varios parques y espacios públicos donde los residentes pueden disfrutar de actividades al aire libre
                                         </p>
                                     </div>
                                 </figure>
@@ -210,8 +207,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Candelaria</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        Dada su riqueza histórica y cultural, la Candelaria es un destino turístico importante en Bogotá. Los visitantes pueden explorar sus museos.
                                         </p>
                                     </div>
                                 </figure>
@@ -227,8 +223,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Chapinero</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        Chapinero se encuentra en el norte de Bogotá y es una de las localidades más céntricas de la ciudad.
                                         </p>
                                     </div>
                                 </figure>
@@ -244,8 +239,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Ciudad Bolivar</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                            Ciudad Bolívar es principalmente una zona residencial con una alta densidad de población.
                                         </p>
                                     </div>
                                 </figure>
@@ -261,8 +255,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Engativa</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        La localidad cuenta con una amplia gama de opciones comerciales y de servicios.
                                         </p>
                                     </div>
                                 </figure>
@@ -278,8 +271,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Fontibon</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        Fontibón tiene una rica herencia cultural y tradiciones arraigadas. Cuenta con festivales y eventos culturales
                                         </p>
                                     </div>
                                 </figure>
@@ -295,8 +287,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Kennedy</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        Kennedy es una localidad con un carácter residencial y comercial. Aquí encontrarás una gran variedad de viviendas,
                                         </p>
                                     </div>
                                 </figure>
@@ -312,8 +303,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Los Martires</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        La seguridad en Los Mártires ha mejorado en los últimos años, y se han implementado medidas para proteger a los residentes y visitantes en esta zona de alto tráfico.
                                         </p>
                                     </div>
                                 </figure>
@@ -329,8 +319,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Puente Aranda</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        Puente Aranda es un centro importante de comercio mayorista, donde se realizan transacciones comerciales
                                         </p>
                                     </div>
                                 </figure>
@@ -346,8 +335,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Rafael Uribe Uribe</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        La localidad está bien conectada con el sistema de transporte público de Bogotá, incluyendo buses 
                                         </p>
                                     </div>
                                 </figure>
@@ -363,8 +351,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>San Cristobal</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        La localidad alberga instituciones educativas que ofrecen desde educación preescolar hasta educación superior.
                                         </p>
                                     </div>
                                 </figure>
@@ -380,8 +367,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Santa Fe</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        La localidad se caracteriza por su arquitectura colonial y neoclásica
                                         </p>
                                     </div>
                                 </figure>
@@ -397,8 +383,7 @@ require_once('./config/conexion.php');
                                     <div class="capa">
                                         <h3>Suba</h3>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            Maiores, vero!
+                                        Suba dispone de parques y espacios públicos donde los residentes pueden disfrutar de actividades al aire libre.
                                         </p>
                                     </div>
                                 </figure>
@@ -493,79 +478,9 @@ require_once('./config/conexion.php');
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="modalPoliticaPrivacidad" tabindex="-1" role="dialog"
-            aria-labelledby="modalPoliticaPrivacidadLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalPoliticaPrivacidadLabel">Política de Privacidad</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h4>Política de Privacidad de MyBog</h4>
-                        <p>
-                            En MyBog, valoramos y respetamos tu privacidad. Esta política de privacidad describe cómo
-                            recopilamos, utilizamos y protegemos tu información personal cuando utilizas nuestro
-                            servicio.
-                        </p>
-                        <p>
-                            <strong>Información Personal:</strong> Recopilamos información personal como tu nombre y
-                            dirección de correo electrónico cuando te registras en MyBog.
-                        </p>
-                        <p>
-                            <strong>Uso de la Información:</strong> Utilizamos tu información personal para
-                            proporcionarte un mejor servicio y personalizar tu experiencia en MyBog.
-                        </p>
-                        <p>
-                            <strong>Seguridad:</strong> Protegemos tu información personal y no la compartimos con
-                            terceros sin tu consentimiento.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal de Términos y Condiciones -->
-        <div class="modal fade" id="modalTerminosCondiciones" tabindex="-1" role="dialog"
-            aria-labelledby="modalTerminosCondicionesLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalTerminosCondicionesLabel">Términos y Condiciones</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <h4>Términos y Condiciones de MyBog</h4>
-                        <p>
-                            Al utilizar el servicio de MyBog, aceptas cumplir con nuestros términos y condiciones. Por
-                            favor, léelos cuidadosamente antes de usar nuestro servicio.
-                        </p>
-                        <p>
-                            <strong>Uso del Servicio:</strong> Está prohibido el uso inapropiado o ilegal de nuestro
-                            servicio. No toleramos el spam ni la conducta abusiva.
-                        </p>
-                        <p>
-                            <strong>Contenido del Usuario:</strong> Al publicar contenido en MyBog, garantizas que
-                            tienes los derechos necesarios sobre ese contenido.
-                        </p>
-                        <p>
-                            <strong>Cancelación de Cuenta:</strong> Puedes cancelar tu cuenta en cualquier momento si ya
-                            no deseas utilizar nuestro servicio.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php
+        include('modales_footer.php');
+        ?>
         <footer class="footer">
             <nav>
                 <ul>
@@ -587,6 +502,28 @@ require_once('./config/conexion.php');
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./Funcionamiento_por_js/editar_usuario.js"></script>
     <script src="./Funcionamiento_por_js/localidades.js"></script>
+    <script>
+                const searchInput = document.getElementById("searchInput");
+        const items = document.querySelectorAll(".mundo_aventura, .parque, .simon_bolivar, .estadio, .cine_colombia, .el_corral");
+
+        searchInput.addEventListener("input", function () {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            items.forEach(item => {
+                const title = item.querySelector("h3").textContent.toLowerCase();
+                const itemText = item.textContent.toLowerCase();
+
+                if (title.includes(searchTerm) || itemText.includes(searchTerm)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        });
+        </script>
+        <script>
+   
+
 
 
 

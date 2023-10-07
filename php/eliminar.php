@@ -1,8 +1,8 @@
 <?php
 include_once('../config/conexion.php');
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION["user_id"])) {
-    $usuarioId = $_SESSION["user_id"];
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION["Id_Usuario"])) {
+    $usuarioId = $_SESSION["Id_Usuario"];
 
     // Eliminar registros relacionados en la tabla 'registro_de_establecimiento'
     $sqlEliminarRegistro = "DELETE FROM registro_de_establecimiento WHERE Id_Usuario = ?";

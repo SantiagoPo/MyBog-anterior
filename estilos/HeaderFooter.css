@@ -78,6 +78,7 @@ html, body {
 
 /* Estilos del pie de página */
 .footer {
+    
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -114,4 +115,9 @@ html, body {
         margin-top: 70px;
         position: relative;
     }
+}
+
+.close {
+    border: none;
+    background-color: transparent;
 }

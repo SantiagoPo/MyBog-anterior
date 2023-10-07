@@ -11,3 +11,4 @@ function validarFormulario() {
     errorMensaje.style.display = "none";
     return true;
 }
+

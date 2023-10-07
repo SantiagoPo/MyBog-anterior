@@ -182,47 +182,47 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
             <footer class="footer">
-                <nav>
-                    <ul>
-                        <li><a href="#" data-toggle="modal" data-target="#modalPoliticaPrivacidad">Política de
-                                privacidad</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y
-                                condiciones</a></li>
-                        <li><a href="#">Contacto</a></li>
+            <nav>
+                <ul>
+                    <li><a href="#" data-toggle="modal" data-target="#modalPoliticaPrivacidad">Política de
+                            privacidad</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#modalTerminosCondiciones">Términos y
+                            condiciones</a></li>
+                    <li><a href="#">Contacto</a></li>
 
-                        <?php
-                        if (isset($_SESSION['user_id'])) {
-                            echo '';
-                        } else {
-                            echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
-                        }
-                        ?>
+                    <?php
+                    if (isset($_SESSION['user_id'])) {
+                        echo '';
+                    } else {
+                        echo '<li><a data-toggle="modal" data-target="#myModal" href="#">deseas registrar tu establecimiento</a></li>';
+                    }
+                    ?>
 
-                    </ul>
+                </ul>
 
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
-                                    <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    Debes estar logeado/Registrado para utilizar este servicio.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                </div>
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="myModalLabel">Mensaje</h4>
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                Debes estar logeado/Registrado para utilizar este servicio.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <br>
-                    <p>© 2023 MyBog. Todos los derechos reservados.</p>
-                </nav>
-            </footer>
+                <br>
+                <p>© 2023 MyBog. Todos los derechos reservados.</p>
+            </nav>
+        </footer>
         </div>
         <script src="./Funcionamiento_por_js/scripts_calendar.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

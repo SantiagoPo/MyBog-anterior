@@ -71,9 +71,12 @@ body {
 }
 
 .login-box .form-group a {
+    bottom: 15px;
     position: relative;
+    text-align: center;
+    display: block;
     font-size: 13px;
-    color: #f2163e;
+    color: #000;
     text-decoration: none;
 }
 
@@ -123,9 +126,4 @@ body {
     color: #ffcf11;
     border-radius: 5px;
     box-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0202, 0 0 20px #ff0000;
-}
-
-.login-box .form-group a {
-    text-align: center;
-    display: block;
 }

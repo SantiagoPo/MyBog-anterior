@@ -9,7 +9,7 @@ if (isset($_SESSION['user_id'])) {
                                     
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="userDropdown">
-                                    <span class="user-info-container">' . $_SESSION['user_id'] . '</span>
+                                    <span class="user-info-container nombreUsuario">' . $_SESSION['nombres'] . '</span>
                                     <br>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#" data-toggle="modal" data-target="#userModal">Opciones</a>
@@ -41,26 +41,32 @@ if (isset($_SESSION['user_id'])) {
                 </button>
             </div>
             <div class="modal-body">
-                <form id="editForm">
+                <form id="editForm" method="post" action="php/actualizar.php">
+                    <!-- Añade el atributo 'action' con la URL del script PHP -->
                     <ul class="list-group">
                         <li class="list-group-item">Nombre: <span id="nombreUsuario">
                                 <?php echo isset($nombres) ? $nombres : ''; ?>
                             </span>
-                            <input type="text" id="editNombre" class="form-control" style="display: none;">
+                            <input type="text" name="nuevoNombre" id="editNombre" class="form-control"
+                                style="display: none;">
                         </li>
                         <li class="list-group-item">Apellido: <span id="apellidoUsuario">
                                 <?php echo isset($apellidos) ? $apellidos : ''; ?>
                             </span>
-                            <input type="text" id="editApellido" class="form-control" style="display: none;">
+                            <input type="text" name="nuevoApellido" id="editApellido" class="form-control"
+                                style="display: none;">
                         </li>
                         <li class="list-group-item">Correo: <span id="correoUsuario">
                                 <?php echo isset($email) ? $email : ''; ?>
                             </span>
-                            <input type="text" id="editCorreo" class="form-control" style="display: none;">
+                            <input type="text" name="nuevoCorreo" id="editCorreo" class="form-control"
+                                style="display: none;">
                         </li>
-
                     </ul>
+                    <button type="submit" id="btnGuardarCambios" class="btn btn-success" style="display: none;">Guardar
+                        Cambios</button>
                 </form>
+
             </div>
             <div class="modal-footer">
                 <button id="btnEditar" class="btn btn-primary">Editar Datos</button>
@@ -157,7 +163,9 @@ if (isset($_SESSION['user_id'])) {
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- Asegúrate de que jQuery esté cargado antes de este script -->
 <script>
     $(document).ready(function () {
         // Agrega un evento que se active cuando se muestre el modal
@@ -169,5 +177,3 @@ if (isset($_SESSION['user_id'])) {
         });
     });
 </script>
-
-

@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <?php
+session_start();
 include_once('../config/conexion.php');
 
 $email = trim($_POST['Email']);
@@ -27,14 +28,18 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
 
     // Verificar la contraseña utilizando password_verify()
     if (password_verify($password, $hashAlmacenado)) {
-        $_SESSION['user_id'] = true;
+        // Aquí se configura correctamente el id_usuario
+        $id_usuario = $fila['Id_Usuario'];
+        $_SESSION['user_id'] = $id_usuario;
+        $_SESSION['id_usuario'] = $id_usuario;
+         // Aquí configura el ID de usuario
         $_SESSION['nombres'] = $nombresDelUsuario;
         $_SESSION['apellidos'] = $apellidosDelUsuario;
         $_SESSION['email'] = $emailDelUsuario;
         echo '<div class="alert alert-success" role="alert">
         Inicio de sesión exitoso. Serás redireccionado en 3 segundos.
         </div>';
-        echo '<script> setTimeout(function(){ window.location.href = "../calendario.php"; }, 3000); </script>';
+        echo '<script> setTimeout(function(){ window.location.href = "../index.php"; }, 3000); </script>';
     } else {
         echo '<div class="alert alert-danger" role="alert">
                 Credenciales incorrectas. Inténtalo de nuevo.
@@ -48,6 +53,5 @@ if ($fila = mysqli_fetch_assoc($resultado)) {
           </div>';
     echo '<script> setTimeout(function(){ window.location.href = "../main.php"; }, 3000); </script>';
     exit;
-    
 }
 ?>
