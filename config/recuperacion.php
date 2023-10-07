@@ -1,8 +1,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 <?php
-include_once('conexion.php');
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+include_once('conexion.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['email'])) {
@@ -16,8 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($stmt->num_rows > 0) {
             require '../PHPMailer/src/Exception.php';
             require '../PHPMailer/src/PHPMailer.php';
-            require '../PHPMailer/src/SMTP.php';
-
+            require_once('../PHPMailer/src/SMTP.php');
             $mail = new PHPMailer(true);
             try {
                 $mail->isSMTP();
@@ -40,24 +40,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $mail->isHTML(true);
                 $mail->Subject = 'Código de Verificación';
                 $mail->Body = '¡Hola!<br><br>¡Estamos a punto de darte acceso de nuevo! Para continuar, necesitamos confirmar que eres tú.<br><br>Tu código de verificación es: <strong>' . $verification_code . '</strong> <br><br> Por favor, utiliza este código para completar el proceso y restablecer tu contraseña.<br><br>Gracias por confiar en nosotros.<br><br>Saludos,<br>El Equipo de MyBog';
-
                 $mail->send();
                 echo '<div class="alert alert-success" role="alert">
                 Se ha enviado un código de verificación a tu correo. Verifica tu correo para continuar.
                 </div>';
                 echo '<script> setTimeout(function(){ window.location.href = "../verificar_codigo.php?user_id=' . $user_id . '"; }, 3000); </script>';
             } catch (Exception $e) {
-                echo "Error en el envío del correo: {$mail->ErrorInfo}";
+                echo "Error en el envío del correo: {$e->getMessage()}";
             }
         } else {
-            header("location: ../main.php");
+            echo '<div class="alert alert-danger" role="alert">
+                El correo electrónico no está registrado.
+            </div>';
         }
     } elseif (isset($_POST['password'])) {
         // Proceso de cambio de contraseña
 
         $password = $_POST['password'];
         $confirm_password = $_POST['confirm_password'];
-        $user_id = $_POST['user_id']; // Obtener el ID de usuario desde el formulario
+        $user_id = $_POST['id_usuario']; // Obtener el ID de usuario desde el formulario
 
         // Verificar que las contraseñas coincidan
         if ($password === $confirm_password) {
@@ -81,14 +82,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo '<script> setTimeout(function(){ window.location.href = "../main.php"; }, 3000); </script>';
                 exit();
             } else {
-                
-                echo '<div class="alert alert-danger" >
+                echo '<div class="alert alert-danger" role="alert">
                 Error al actualizar la contraseña. Inténtalo de nuevo.
                 </div>';
             }
         } else {
-           
-                echo '<div class="alert alert-danger" >
+            echo '<div class="alert alert-danger" role="alert">
                 Las contraseñas no coinciden. Inténtalo de nuevo.
                 </div>';
         }
