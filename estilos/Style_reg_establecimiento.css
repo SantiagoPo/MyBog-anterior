@@ -200,3 +200,54 @@ body {
     }
 
 }
+.container2 {
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    left: 220px;
+    top: -650px;
+}
+
+.slide ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide li {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.slide img {
+    width: 500px;
+    height: 300px;
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: -70px;
+}
+
+.slider-control {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+
+}
+
+.slider-control:focus {
+    outline: none;
+}
+
+.slider-control.active {
+    background-color: yellow;
+
+}

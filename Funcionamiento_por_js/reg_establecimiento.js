@@ -49,3 +49,43 @@ function cargarImagenes() {
 
 // Llamada a la función para cargar las imágenes
 cargarImagenes();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.querySelector(".slide ul");
+  const slides = document.querySelectorAll(".slide li");
+  const controls = document.querySelectorAll(".slider-control");
+
+  let currentIndex = 0;
+  const slideCount = slides.length;
+  const slideWidth = slides[0].clientWidth;
+  const intervalTime = 3000; // Cambia esto para ajustar el intervalo en milisegundos (3 segundos en este caso).
+
+  function nextSlide() {
+      currentIndex = (currentIndex + 1) % slideCount;
+      updateSlider();
+  }
+
+  function updateSlider() {
+      const translateX = -currentIndex * slideWidth;
+      slider.style.transform = `translateX(${translateX}px)`;
+
+      // Actualiza los botones de control
+      controls.forEach((control, index) => {
+          if (index === currentIndex) {
+              control.classList.add("active");
+          } else {
+              control.classList.remove("active");
+          }
+      });
+  }
+
+  setInterval(nextSlide, intervalTime);
+
+  // Agrega eventos a los botones de control
+  controls.forEach((control, index) => {
+      control.addEventListener("click", () => {
+          currentIndex = index;
+          updateSlider();
+      });
+  });
+});
